@@ -45,14 +45,9 @@ int main(int argc, char** argv)
 	dict.Init_from_file(doc_coll, "LDC_map.txt");
 
 	Document test_doc(&dict, &query, doc, doc_str);
-
 	test_doc.Divide_into_frags();
-
 	test_doc.Make_annotation();
-
 	test_doc.Print_annotation("RESULT_new.txt", doc_str);
-
 	getchar();
-
 	return 0;
 }
